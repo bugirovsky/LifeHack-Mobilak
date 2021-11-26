@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-image: url(../img/body1.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+@font-face {
+font-family: 'OfficinaSerifC-Bold';
+src: url(../fonts/OfficinaSerifC-Bold.otf);
+}
+
+@font-face {
+font-family: 'Art-Metropol';
+src: url(../fonts/Art-Metropol.ttf);
+}
+
+.txt_eff1{
+font-family: 'Art-Metropol';
+text-shadow: rgb(3, 3, 3) 5px 4px 4px;
+}
+
+.text_eff2{
+font-family: 'OfficinaSerifC-Bold';;
+text-shadow: rgb(3, 3, 3) 4px 4px 4px;
+}
+
+/*-----------header-----------*/
+
+header div.row {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  background: #e0e0e0;
+  margin-top: -7em;
+}
+
+header div.logo {
+  color: #302a29;
+  font-family: 'Art-Metropol';
+  font-size: 30px;
+  font-weight: 800;
+  margin-left: 15px;
+  padding: 15px 15px;
+}
+
+header ul li.name {
+  display: inline-block;
+  font-family:'OfficinaSerifC-Bold';
+  text-shadow: rgb(3, 3, 3) 0.5px 0.5px 0.5px;
+  padding: 15px 15px;
+  color: #302a29;    /*#bcb8b7*/
+  font-size: 19px;
+  line-height: 2;
+}
+
+.name:hover{
+  color: #f15e3e;
+}
+
+/*-------menu--------*/
+
+menu div.main_content{
+  position: relative;
+  display: block;
+  padding: 0;
+  margin-top: 7em;
+}
+
+menu div h5{
+  color: #e1e1e1;
+  font-family:  'Art-Metropol';
+  font-size: 4.5em;
+  text-align: center;
+  padding: 0.2em;
+  color: #e0e0e0;
+  align-items: center;
+  text-shadow: #f15e3e 2px 2px 2px;
+}
+
+menu div.advant{
+  color: #e0e0e0;
+  font-family: 'OfficinaSerifC-Bold';
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0.4em;
+  color: #e0e0e0;
+  align-items: center;
+}
+
+menu li{
+  display: inline-block;
+  padding: 45px 25px 0 25px;
+}
+
+/*-------main--------*/
+
+main div.menu_content{
+  position: relative;
+  background: #f15e3e;
+  margin-top: 4em;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 15px;
+  overflow: auto;
+  text-align: center;
+}
+
+main h5{
+  color: #e0e0e0;
+  text-align: center;
+  font-family: 'OfficinaSerifC-Bold';
+  font-size: 25px;
+  text-shadow: rgb(3, 3, 3) 4px 4px 4px;
+  margin-top: 2em;
+}
+
+main h4{
+  color: #e0e0e0;
+  text-align: center;
+  font-family: 'OfficinaSerifC-Bold';
+  font-size: 15px;
+  margin-top: 2em;
+  margin-left: -11em;
+}
+
+main form.cont_form{
+  margin-left: 10em;
+}
+
+*:focus{
+    outline: none;
+}
+
+main li{
+  list-style-type: none;
+  display: inline-block;
+} 
+
+
+main input{
+  position: relative;
+  width: 15em;
+  height: 3.5em;
+  border: 2px solid #302a29;
+  border-radius: 60px;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 10px #ccc, 0 10px 15px #eee inset;
+  font-size: 15px;
+  font-family:'OfficinaSerifC-Bold';
+  text-align: center;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  margin-left: 1.3em;
+}
+
+main button.register{
+  width: 17em;
+  height: 5em;
+  border: 2px solid #302a29;
+  border-radius: 60px;
+  padding: 10px 20px;
+  font-family: 'OfficinaSerifC-Bold';
+  font-size: 15px;
+  text-align: center;
+  margin-left: 6.5em;
+  box-shadow: 5px 5px 20px;
+}
+
+main button.register:hover{
+  background: #302a29;
+  color: #e0e0e0;
+}
+
+main input:focus
+{
+    padding-right: 40px;
+    padding-left: 40px
+}
+
+main div.numb li{
+  display: inline-block;
+  font-size: 10em;
+}
+
+.numb{
+  font-family: 'OfficinaSerifC-Bold';
+  padding: 20px 0; 
+  display: flex;
+  margin-left: -100px;
+  margin-top: -25px;
+
+}
+
+.numb li{
+  text-align: center; 
+  list-style-type: none; 
+  width: 20%; 
+  padding: 0 30px; 
+  display: flex; 
+  flex-direction: column;
+}
+
+.numb li:nth-child(2n){
+  flex-direction: column-reverse;
+}
+ 
+.numb li .int{
+  font-size: 120px; 
+  color: #84def8; 
+  font-weight: bold; 
+  line-height: 120px;
+  text-shadow: #302a29 1.5px 1.5px 0, #302a29 -1.5px -1.5px 0, 
+                 #302a29 -1.5px 1.5px 0, #302a29 1.5px -1.5px 0;
+  color: #e0e0e0;
+}
+
+.numb li .txt{
+  font-size: 20px;
+  color: #fff; 
+  font-weight: bold;
+  text-shadow: #302a29 1px 1px 0, #302a29 -1px -1px 0, 
+                 #302a29 -1px 1px 0, #302a29 1px -1px 0;
+  color: #e0e0e0;
+}
+
+.numb li:nth-child(odd) .txt{
+  padding: 10px 0 0 0;
+}
+
+.numb li:nth-child(even) .txt{
+  padding: 50px 0 50px 0;
+}
+
+/*----------footer-----------*/
+
+footer h5{
+  text-align: center;
+  font-family: 'Art-Metropol';
+  font-size: 50px;
+  color: white;
+  margin-top: -25px;
+  color: #e0e0e0;
+  text-shadow: #f15e3e 3px 3px 3px;
+
+}
+footer div.margin{
+  margin-top: 60px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: -250px;
+}
+
+footer li{
+  list-style-type: none;
+}
+
+.fa-map-marker{
+  position: relative;
+  color: #e0e0e0;
+  padding: 15px 15px 100px;
+  width: 100%;
+  margin-bottom: -75px;
+}
+
+span{
+  font-size: 20px;
+  padding: 15px;
+  font-family:'OfficinaSerifC-Bold';
+}
+
+.fa-mobile{
+  position: relative;
+  color: #e0e0e0;
+  padding: 10px 15px 100px;
+  width: 100%;
+  margin-bottom: -75px;
+  margin-left: -69px;
+}
+
+.fa-calendar{
+  position: relative;
+  color: #e0e0e0;
+  padding: 10px 15px 100px;
+  width: 100%;
+  margin-left: -50px;
+}
+
+iframe{
+ position: relative;
+ margin-top: -23em;
+ padding: 10px 15px 100px;
+}
+
+footer div.footer_content{
+  position: relative;
+  text-align: center;
+  padding: 100px 15px 100px;
+  width: 100%;
+}
+
+footer div.margin_font{
+  margin-top: 20px;
+  margin-left: -650px;
+}
+
+footer div.margin_maps{
+  margin-top:  -5px;
+  margin-left: 520px;
+}
+
+footer div.margin_link{
+ position: relative;
+  color: #e0e0e0;
+  padding: 10px 15px 100px;
+  margin-left: -770px;
+  margin-top: -45px;
+}
+
+.fa-facebook-official{
+  color: #e0e0e0;
+} 
+
+.fa-whatsapp, .fa-telegram{
+  color: #e0e0e0;
+  margin-left: 35px;
+} 
+
+.fa-facebook-official:hover,
+.fa-whatsapp:hover, 
+.fa-telegram:hover{
+  color: #f15e3e;
+}
+
+footer div.line3{
+  display: inline-block;
+  border: 2px solid #f15e3e;
+  width: 80%;
+  margin-top: -25px;
+  margin-bottom: 25px;
+}
+
+footer h3{
+  color: #e0e0e0;
+  text-align: center;
+  font-family:'OfficinaSerifC-Bold';
+  font-size: 20px;
+  margin-bottom: -35px;
+}
+
+
+
